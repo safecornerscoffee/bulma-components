@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 2rem;
+    }
+    h1 {
+     background-color: #fff000; 
+    }
+    .ilbuni img {
+      width: 1em;
+      height: 1em;
+    }
+    .link-google { 
+      color: red;
+    }
+    .special {
+      background: pink;
+    }
+  </style>
+  <script>
+    // window.addEventListener('DOMContentLoaded', function() {
+    //   let title = document.getElementById('main-title');
+    //   console.log(title);
+    // })
+  </script>
+</head>
+<body>
+  <h1 id="main-title">
+    <span>hello</span>
+    Event
+    <small>small</small>
+  </h1>
+  <ul>
+    <li class="ilbuni"><img src="images/ilbuni.png"><a class="link-google" href="https://google.com">google</a></li>
+    <li class="ilbuni"><img src="images/ilbuni.png"></li>
+    <li class="ilbuni"><img src="images/ilbuni.png"></li>
+  </ul>
+
+  </div>
+  <script>
+    let title = document.getElementById('main-title');
+    console.log(title);
+    let titleSpan = title.getElementsByTagName('span');
+    console.log(titleSpan[0]);
+
+    let mainTitle = document.querySelector('#main-title small');
+    console.log(mainTitle);
+
+    let ilbuni = document.querySelector('.ilbuni');
+    console.log(ilbuni);
+    let ilbunis = document.querySelectorAll('.ilbuni');
+    console.log(ilbunis);
+
+    for (let i =0; i < ilbunis.length; i++) {
+      ilbunis[i].style.border = '1px solid red';
+    }
+
+    let link = document.querySelector('.ilbuni a');
+    console.log(link.getAttribute('href'));
+    console.log(link.getAttribute('class'));
+    console.log(link.getAttribute('value'));
+    link.setAttribute('value', 'hello');
+    console.log(link.getAttribute('value'));
+    link.classList.add('special');
+    setTimeout(function() {
+      link.classList.remove('special');
+    }, 2000);
+    console.log(link.classList.contains('special'));
+    let listElem = document.createElement('li');
+    link.parentNode.appendChild(listElem);
+    let mother = document.querySelector('ul');
+    console.log(mother);
+    mother.appendChild(listElem);
+  </script>
+</body>
+</html>

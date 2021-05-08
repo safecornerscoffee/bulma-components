@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 2rem;
+    }
+    h1 {
+     background-color: #fff000; 
+    }
+    
+    .menu {
+      display: flex;
+      background: yellowgreen;
+    }
+
+    .menu-link {
+      margin: .1em;
+      padding: .3em;
+      color: #fff;
+      text-decoration: none;
+      background: dodgerblue;
+      list-style: none;
+    }
+
+    .menu-active {
+      background: orange;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="main-title">
+    Event
+  </h1>
+  <nav class="menu">
+    <a href="#" class="menu-link" data-menu="1">1</a>
+    <a href="#" class="menu-link" data-menu="2">2</a>
+    <a href="#" class="menu-link" data-menu="3">3</a>
+  </nav>
+  <button>a</button>
+  <script>
+ let currentMenuItem;
+
+let clickEventHandler = function(event) {
+	ActivateMenuItem(event);
+};
+
+let ActivateMenuItem = function(event) {
+	if(!event.target.classList.contains('menu-link')) return;
+    if(currentMenuItem) {
+      currentMenuItem.classList.remove('menu-active');
+  	}
+    event.target.classList.add('menu-active');
+    currentMenuItem = event.target;
+}
+  let menu = document.querySelector('.menu');
+  menu.addEventListener('click', clickEventHandler);
+
+  function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greeting = function() {
+      console.log(this.name + this.age);
+    }
+  }
+
+  let p1 = new Person("백수", 14);
+
+  function makeUser(name, age) {
+    return {
+        name: name,
+        age: age,
+        ref: this
+    };
+};
+let user = makeUser('푸우', 11);
+
+  </script>
+</body>
+</html>
