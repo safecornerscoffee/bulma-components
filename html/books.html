@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="navbar has-shadow">
+    <div class="navbar-brand">
+      <a href="#" class="navbar-item">
+        <img src="images/logo.png">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div><!-- navbar-brand -->
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>Publishing at the speed of technology</small>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            Mocha
+          </div>
+          <div class="navbar-dropdown is-right">
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-mall">
+                  <i class="fa fa-user"></i>
+                </span>
+                Profile
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fa fa-bug"></i>
+                </span>
+                Report bug
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                Sign Out
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- navbar-menu -->
+  </div><!-- navbar -->
+
+  <section class="section">
+    <div class="columns">
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <nav class="menu">
+          <p class="label">
+            Menu
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html" class="is-active">
+                <span class="icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                Books
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon">
+                  <i class="fas fa-address-book"></i>
+                </span>
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="orders.html">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                Orders
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- sidebar-->
+      <div class="column">
+        <h1 class="title">Book</h1>
+        
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle is-5">
+                <strong>6</strong> books
+              </p>
+            </div>
+
+            <p class="level-item">
+              <a href="new-book.html" class="button is-success">New</a>
+            </p>
+            
+            <div class="level-item is-hidden-tablet-only">
+              <div class="field has-addons">
+                <p class="control">
+                  <input type="text" class="input" placeholder="Book name, ISBN...">
+                </p>
+                <p class="control">
+                  <button class="button">Search</button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="level-right">
+            <div class="level-item">
+              Order by
+            </div>
+            <div class="level-item">
+              <div class="select">
+                <select>
+                  <option>Publish Date</option>
+                  <option>Price</option>
+                  <option>Page count</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </nav><!-- toolbar -->
+
+        <div class="columns is-multiline">
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/tensorflow.jpg" width="80">
+                </aside>
+                
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow for Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351
+                    <br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/docker.jpg" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-marginless">
+                    <a href="edit-book.html">
+                      Docker in Production
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    156 pages
+                    <br>
+                    ISBN: 9781939902184
+                    <br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/gulp.jpg" width="80">
+                </aside>
+                
+                <div class="media-content">
+                  <p class="title is-5 is-marginless">
+                    <a href="edit-book.html">
+                      Developing a Gulp.js Edge
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    134 pages
+                    <br>
+                    ISBN: 9781939902146
+                    <br>
+                    <a href="edit-book">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/swift.jpg" width="80">
+                </aside>
+                
+                <div class="media-content">
+                  <p class="title is-5 is-marginless">
+                    <a href="edit-book.html">
+                      Developing a Gulp.js Edge
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    342 pages
+                    <br>
+                    ISBN: 9781939902115
+                    <br>
+                    <a href="edit-book">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/js-framework.jpg" width="80">
+                </aside>
+                
+                <div class="media-content">
+                  <p class="title is-5 is-marginless">
+                    <a href="edit-book.html">
+                      Choosing a JavaScript Framework
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $19.99
+                  </p>
+                  <div class="content is-small">
+                    96 pages
+                    <br>
+                    ISBN: 9781939902092
+                    <br>
+                    <a href="edit-book">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="images/google-cardboard.jpg" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-marginless">
+                    <a href="edit-book.html">
+                      Deconstructing Google Cardboard Apps
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    178 pages
+                    <br>
+                    ISBN: 9781933902245
+                    <br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div> <!-- columns -->
+
+        <nav class="pagination">
+          <a href="#" class="pagination-previous">Previous</a>
+          <a href="#" class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a href="#" class="pagination-link">1</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">45</a>
+            </li>
+            <li>
+              <a href="#" class="pagination-link is-current">46</a>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">47</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">86</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- main -->
+    </div>
+  </section>
+</body>
+</html>
