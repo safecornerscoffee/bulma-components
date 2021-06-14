@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="navbar has-shadow">
+    <div class="navbar-brand">
+      <a href="#" class="navbar-item">
+        <img src="images/logo.png">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div><!-- navbar-brand -->
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>Publishing at the speed of technology</small>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            Mocha
+          </div>
+          <div class="navbar-dropdown is-right">
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-mall">
+                  <i class="fa fa-user"></i>
+                </span>
+                Profile
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fa fa-bug"></i>
+                </span>
+                Report bug
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                Sign Out
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- navbar-menu -->
+  </div><!-- navbar -->
+
+  <section class="section">
+    <div class="columns">
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <nav class="menu">
+          <p class="label">
+            Menu
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html">
+                <span class="icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                Books
+              </a>
+            </li>
+            <li>
+              <a href="customers.html" class="is-active">
+                <span class="icon">
+                  <i class="fas fa-address-book"></i>
+                </span>
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="orders.html">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                Orders
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- sidebar-->
+      <div class="column">
+        <h1 class="title">Customers</h1>
+        
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle is-5">
+                <strong>6</strong> customers
+              </p>
+            </div>
+
+            <p class="level-item">
+              <a href="new-customer.html" class="button is-success">New</a>
+            </p>
+            
+            <div class="level-item is-hidden-tablet-only">
+              <div class="field has-addons">
+                <p class="control">
+                  <input type="text" class="input" placeholder="Name, email...">
+                </p>
+                <p class="control">
+                  <button class="button">Search</button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="level-right">
+            <p class="level-item"><strong>All</strong></p>
+            <p class="level-item"><a>With orders</a></p>
+            <p class="level-item"><a>Without orders</a></p>
+          </div>
+        </nav><!-- toolbar -->
+
+        <table class="table is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th class="is-narrow">
+                <input type="checkbox">
+              </th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Orders</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th class="is-narrow">
+                <input type="checkbox">
+              </th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Orders</th>
+              <th>Actions</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                <a href="edit-customer.html">
+                  <strong>John Miller</strong>
+                </a>
+              </td>
+              <td><code>johnmiller@gmail.com</code></td>
+              <td>United States</td>
+              <td>
+                <a href="customer-orders"html">2</a>
+              </td>
+              <td>
+                <div class="buttons">
+                  <a href="edit-customer.html" class="button is-small">Edit</a>
+                  <a class="button is-small">Delete</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                <a href="edit-customer.html">
+                  <strong>Samantha Rogers</strong>
+                </a>
+              </td>
+              <td><code>samrogers@gmail.com</code></td>
+              <td>United Kingdom</td>
+              <td>
+                <a href="customer-orders"html">5</a>
+              </td>
+              <td>
+                <div class="buttons">
+                  <a href="edit-customer.html" class="button is-small">Edit</a>
+                  <a class="button is-small">Delete</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>
+                <a href="edit-customer.html">
+                  <strong>Paul Jacques</strong>
+                </a>
+              </td>
+              <td><code>paul.jacques@gmail.com</code></td>
+              <td>Canada</td>
+              <td>
+                <a href="customer-orders"html">2</a>
+              </td>
+              <td>
+                <div class="buttons">
+                  <a href="edit-customer.html" class="button is-small">Edit</a>
+                  <a class="button is-small">Delete</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <nav class="pagination">
+          <a href="#" class="pagination-previous">Previous</a>
+          <a href="#" class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a href="#" class="pagination-link">1</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">45</a>
+            </li>
+            <li>
+              <a href="#" class="pagination-link is-current">46</a>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">47</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a href="#" class="pagination-link">86</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- main -->
+    </div>
+  </section>
+</body>
+</html>
