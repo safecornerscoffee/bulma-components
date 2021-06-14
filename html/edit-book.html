@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Book</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="navbar has-shadow">
+    <div class="navbar-brand">
+      <a href="#" class="navbar-item">
+        <img src="images/logo.png">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div><!-- navbar-brand -->
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <small>Publishing at the speed of technology</small>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            Mocha
+          </div>
+          <div class="navbar-dropdown is-right">
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-mall">
+                  <i class="fa fa-user"></i>
+                </span>
+                Profile
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fa fa-bug"></i>
+                </span>
+                Report bug
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                Sign Out
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- navbar-menu -->
+  </div><!-- navbar -->
+
+  <section class="section">
+    <div class="columns">
+      <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+        <nav class="menu">
+          <p class="label">
+            Menu
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a href="dashboard.html">
+                <span class="icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="books.html" class="is-active">
+                <span class="icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                Books
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon">
+                  <i class="fas fa-address-book"></i>
+                </span>
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="orders.html">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                Orders
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- sidebar-->
+      <div class="column">
+        <nav class="breadcrumb">
+          <ul>
+            <li>
+              <a href="books.html">Books</a>
+            </li>
+            <li class="is-active">
+              <a href="edit-book.html">Edit book</a>
+            </li>
+          </ul> 
+        </nav> <!-- breadcrumb -->
+
+        <form>
+          <div class="field">
+            <label for="title" class="label">Title</label>
+            <div class="control">
+              <input type="text" class="input is-large" placeholder="e.g. Designing with Bulma" value="TensorFlow For Machine Intelligence">
+            </div>
+          </div>
+          
+          <div class="columns is-desktop">
+            <div class="column">
+              <div class="field">
+                <label class="label">Price</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="number" placeholder="e.g. 22.99" value="22.99" re- quired>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-dollar-sign"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <label for="pages" class="label">Pages</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="e.g. 270" value="270" re-quired>
+              </div>
+            </div>
+
+            <div class="column">
+              <label for="isbn" class="label">ISBN</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. 9781939902351" val- ue="9781939902351" required>
+              </div>
+            </div>
+          </div> <!-- columns -->
+
+          <div class="field">
+            <label class="label">Cover image</label>
+            <div class="control">
+              <img src="images/tensorflow.jpg" alt="">
+            </div>
+            <div class="control">
+              <div class="file has-name">
+                <label class="file-label">
+                  <input type="file" class="file-input">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i class="fa fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Choose a file...
+                    </span>
+                  </span>
+                  <span class="file-name">
+                    No file chosen
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div><!-- main -->
+    </div>
+  </section>
+</body>
+</html>
