@@ -42,7 +42,7 @@
                 Profile
               </div>
             </a>
-            <a href="#" class="navbar-item">
+            <a class="navbar-item open-modal-button" data-target="report-a-bug">
               <div>
                 <span class="icon is-small">
                   <i class="fa fa-bug"></i>
@@ -184,7 +184,7 @@
               <td>
                 <div class="buttons">
                   <a href="edit-customer.html" class="button is-small">Edit</a>
-                  <a class="button is-small">Delete</a>
+                  <a class="button is-small delete-customer">Delete</a>
                 </div>
               </td>
             </tr>
@@ -206,7 +206,7 @@
               <td>
                 <div class="buttons">
                   <a href="edit-customer.html" class="button is-small">Edit</a>
-                  <a class="button is-small">Delete</a>
+                  <a class="button is-small delete-customer">Delete</a>
                 </div>
               </td>
             </tr>
@@ -228,7 +228,7 @@
               <td>
                 <div class="buttons">
                   <a href="edit-customer.html" class="button is-small">Edit</a>
-                  <a class="button is-small">Delete</a>
+                  <a class="button is-small delete-customer">Delete</a>
                 </div>
               </td>
             </tr>
@@ -265,5 +265,29 @@
       </div><!-- main -->
     </div>
   </section>
+  <!--modals-->
+  <div class="modal" id="report-a-bug">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Report a bug</p>
+        <button class="delete close-modal-button">
+        </button>
+      </header>
+      <section class="modal-card-body">
+        <div class="notification is-success is-hidden modal-success-notification">
+          <button class="delete close-notification"></button>
+          <span class="fa fa-bug"></span> Thank you. Your bug has been reported.
+        </div>
+        <textarea class="textarea" placeholder="Let us know what problems you faced."></textarea>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success send-bug-report">Send</button>
+        <button class="button close-modal-button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
